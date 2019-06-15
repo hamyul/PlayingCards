@@ -3,6 +3,7 @@ namespace PlayingCards.model
     public class Card : ICard
     {
         public string CardValue { get; private set; }
+
         public DeckType Type { get; private set; }
 
         public Card(DeckType type, string cardValue)

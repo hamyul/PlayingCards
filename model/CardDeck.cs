@@ -12,6 +12,7 @@ namespace PlayingCards.model
         public CardDeck(DeckType type, IPrintMethod printMethod)
         {
             Type = type;
+            Cards = new List<ICard>();
             _printMethod = printMethod;
         }
 

@@ -7,17 +7,25 @@ namespace PlayingCards
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var outputMethod = new PrintConsoleMethod();
 
-            var heartsCardDeck = new CardDeck(DeckType.Hearts, new PrintConsoleMethod());
-            var clubsCardDeck = new CardDeck(DeckType.Clubs, new PrintConsoleMethod());
-            var spadeCardDeck = new CardDeck(DeckType.Spade, new PrintConsoleMethod());
-            var diamondsCardDeck = new CardDeck(DeckType.Diamonds, new PrintConsoleMethod());
+            var heartsCardDeck = GetCardDeck(DeckType.Hearts, outputMethod);
+            var clubsCardDeck = GetCardDeck(DeckType.Clubs, outputMethod);
+            var spadeCardDeck = GetCardDeck(DeckType.Spade, outputMethod);
+            var diamondsCardDeck = GetCardDeck(DeckType.Diamonds, outputMethod);
 
             heartsCardDeck.Print();
             clubsCardDeck.Print();
             spadeCardDeck.Print();
             diamondsCardDeck.Print();
+        }
+
+        public static ICardDeck GetCardDeck(DeckType type, IPrintMethod printMethod)
+        {
+            ICardDeck cardDeck = new CardDeck(type, printMethod);
+            cardDeck.GenerateCards();
+
+            return cardDeck;
         }
     }
 }
