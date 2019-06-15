@@ -14,9 +14,11 @@ namespace PlayingCards.model
             Type = type;
             Cards = new List<ICard>();
             _printMethod = printMethod;
+
+            GenerateCards();
         }
 
-        public void GenerateCards()
+        protected void GenerateCards()
         {
             for (int i = 1; i <= 13; i++)
             {
