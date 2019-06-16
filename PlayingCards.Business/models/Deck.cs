@@ -16,12 +16,15 @@ namespace PlayingCards.Business.models
             Reset();
         }
 
-        public void Print()
+        public bool Print()
         {
             foreach (var suit in Suits)
             {
-                suit.Print();
+                if (!suit.Print())
+                    return false;
             }
+
+            return true;
         }
 
         public void Shuffle()

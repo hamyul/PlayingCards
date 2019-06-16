@@ -7,6 +7,6 @@ namespace PlayingCards.Business.interfaces
     {
         SuitType Type { get; }
         List<ICard> Cards { get; }
-        void Print();
+        bool Print();
     }
 }

@@ -28,12 +28,13 @@ namespace PlayingCards.Business.models
             }
         }
 
-        public void Print()
+        public bool Print()
         {
             if (_printMethod == null)
-                return;
+                return false;
 
             _printMethod.Print(this);
+            return true;
         }
     }
 }

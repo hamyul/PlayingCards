@@ -3,7 +3,7 @@ namespace PlayingCards.Business.interfaces
     public interface IDeck
     {
         ICardSuit[] Suits { get; }
-        void Print();
+        bool Print();
         void Shuffle();
         void Reset();
     }
