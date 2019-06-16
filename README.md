@@ -2,11 +2,12 @@
 
 This is an application create for fun and in the intention to learn VSCode for MacOSX.
 Main features:
+```
 - Create deck of cards
 - Shuffle
 - Reset
 - Print
-
+```
 
 ## Folder structure
 ```
