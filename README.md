@@ -24,7 +24,7 @@ $ dotnet build
 
 To run the project:
 ```
-$ dotnet run PlayingCards/PlayingCards.csproj
+$ dotnet run -p PlayingCards/PlayingCards.csproj
 ```
 
 To run the unit tests:
