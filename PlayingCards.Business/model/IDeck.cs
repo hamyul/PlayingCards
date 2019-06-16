@@ -1,4 +1,4 @@
-namespace PlayingCards.model
+namespace PlayingCards.Business.model
 {
     public interface IDeck
     {

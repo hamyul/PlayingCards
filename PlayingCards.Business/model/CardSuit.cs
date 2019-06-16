@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace PlayingCards.model
+namespace PlayingCards.Business.model
 {
     public class CardSuit : ICardSuit
     {
