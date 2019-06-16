@@ -54,5 +54,17 @@ namespace PlayingCards.Business.models
             Suits[2] = new CardSuit(SuitType.Hearts, _printMethod);
             Suits[3] = new CardSuit(SuitType.Spade, _printMethod);
         }
+
+        public override bool Equals(object obj)
+        {
+            var deck = obj as IDeck;
+            for (int i = 0; i < Suits.Length; i++)
+            {
+                if (!Suits[i].Equals(deck.Suits[i]))
+                    return false;
+            }
+
+            return true;
+        }
     }
 }

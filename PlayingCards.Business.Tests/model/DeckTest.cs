@@ -48,6 +48,25 @@ namespace PlayingCards.Business.Tests.model
             Assert.IsTrue(success);
         }
 
-        // TODO: Crete tests for methods Shuffle and Reset.
+        [TestMethod]
+        public void should_shuffle_cards()
+        {
+            var sut = new Deck(null);
+            IDeck originalDeck = new Deck(null);
+            sut.Shuffle();
+
+            Assert.AreNotEqual(sut, originalDeck);
+        }
+
+        [TestMethod]
+        public void should_reset_cards()
+        {
+            var sut = new Deck(null);
+            IDeck originalDeck = new Deck(null);
+            sut.Shuffle();
+            sut.Reset();
+
+            Assert.AreEqual(sut, originalDeck);
+        }
     }
 }

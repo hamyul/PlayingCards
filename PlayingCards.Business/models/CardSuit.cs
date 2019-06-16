@@ -36,5 +36,21 @@ namespace PlayingCards.Business.models
             _printMethod.Print(this);
             return true;
         }
+
+        public override bool Equals(object obj)
+        {
+            var cardSuit = obj as ICardSuit;
+
+            if (cardSuit == null)
+                return false;
+
+            for (var i = 0; i < Cards.Count; i++)
+            {
+                if (!Cards[i].Equals(cardSuit.Cards[i]))
+                    return false;
+            }
+
+            return true;
+        }
     }
 }
