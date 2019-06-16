@@ -16,6 +16,8 @@ namespace PlayingCards.model
             {
                 Console.WriteLine($"{card.CardValue} of {card.Type}");
             }
+
+            Console.WriteLine();
         }
     }
 }
