@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PlayingCards.model;
+using PlayingCards.Business.model;
 
-namespace PlayingCards.Tests.model
+namespace PlayingCards.Business.Tests.model
 {
     [TestClass]
     public class CardTest

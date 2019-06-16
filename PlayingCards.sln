@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playingcards", "PlayingCards\playingcards.csproj", "{48C4ACDC-29FB-4663-9F85-05B47848B19D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playingcards.business", "PlayingCards.Business\playingcards.business.csproj", "{48C4ACDC-29FB-4663-9F85-05B47848B19D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playingcards.tests", "PlayingCards.Tests\playingcards.tests.csproj", "{F0B27324-2C75-4B36-9BD8-AC77B03D4D6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playingcards.business.tests", "PlayingCards.Business.Tests\playingcards.business.tests.csproj", "{F0B27324-2C75-4B36-9BD8-AC77B03D4D6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

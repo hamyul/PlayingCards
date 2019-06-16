@@ -1,7 +1,7 @@
 ﻿using System;
-using PlayingCards.model;
+using PlayingCards.Business.model;
 
-namespace PlayingCards
+namespace PlayingCards.App
 {
     class Program
     {
