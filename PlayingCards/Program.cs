@@ -7,17 +7,27 @@ namespace PlayingCards
     {
         static void Main(string[] args)
         {
-            var outputMethod = new PrintConsoleMethod();
+            IPrintMethod outputMethod = new PrintConsoleMethod();
+            IDeck deck = new Deck(outputMethod);
 
-            var heartsCardDeck = new CardSuit(SuitType.Hearts, outputMethod);
-            var clubsCardDeck = new CardSuit(SuitType.Clubs, outputMethod);
-            var spadeCardDeck = new CardSuit(SuitType.Spade, outputMethod);
-            var diamondsCardDeck = new CardSuit(SuitType.Diamonds, outputMethod);
+            PrintDivision("1st print after deck creation.");
+            deck.Print();
 
-            heartsCardDeck.Print();
-            clubsCardDeck.Print();
-            spadeCardDeck.Print();
-            diamondsCardDeck.Print();
+            PrintDivision("2nd print after deck shuffle.");
+            deck.Shuffle();
+            deck.Print();
+
+            PrintDivision("3rd print after deck reset.");
+            deck.Reset();
+            deck.Print();
+        }
+
+        static void PrintDivision(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(text);
+            Console.ForegroundColor = ConsoleColor.Gray;
+
         }
     }
 }
