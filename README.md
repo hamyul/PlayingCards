@@ -1,6 +1,10 @@
 # PlayingCards
 
+This is an application create for fun and in the intention to learn VSCode for MacOSX.
+
+
 ## Folder structure
+```
 PlayingCards/PlayingCards.sln
            |
            |
@@ -8,6 +12,7 @@ PlayingCards/PlayingCards.sln
            |
            +----- PlayingCards.Tests/PlayingCards.Tests.csproj
 
+```
 The commands shown in the next section should be executed in the solution folder, once relative path matters.
 
 ## Basic commands
