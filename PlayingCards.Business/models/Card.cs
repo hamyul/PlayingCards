@@ -53,5 +53,15 @@ namespace PlayingCards.Business.models
         {
             return $"{CardValue} of {Type}";
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+
+            var card = obj as ICard;
+
+            return (card.CardValue == CardValue && card.Type == Type);
+        }
     }
 }
