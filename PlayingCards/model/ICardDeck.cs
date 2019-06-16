@@ -6,7 +6,6 @@ namespace PlayingCards.model
     {
         DeckType Type { get; }
         List<ICard> Cards { get; }
-        void GenerateCards();
         void Print();
     }
 }
