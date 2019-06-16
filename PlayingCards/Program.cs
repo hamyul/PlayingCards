@@ -9,10 +9,10 @@ namespace PlayingCards
         {
             var outputMethod = new PrintConsoleMethod();
 
-            var heartsCardDeck = new CardDeck(DeckType.Hearts, outputMethod);
-            var clubsCardDeck = new CardDeck(DeckType.Clubs, outputMethod);
-            var spadeCardDeck = new CardDeck(DeckType.Spade, outputMethod);
-            var diamondsCardDeck = new CardDeck(DeckType.Diamonds, outputMethod);
+            var heartsCardDeck = new CardSuit(SuitType.Hearts, outputMethod);
+            var clubsCardDeck = new CardSuit(SuitType.Clubs, outputMethod);
+            var spadeCardDeck = new CardSuit(SuitType.Spade, outputMethod);
+            var diamondsCardDeck = new CardSuit(SuitType.Diamonds, outputMethod);
 
             heartsCardDeck.Print();
             clubsCardDeck.Print();

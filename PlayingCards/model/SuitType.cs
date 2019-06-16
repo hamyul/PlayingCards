@@ -1,6 +1,6 @@
 namespace PlayingCards.model
 {
-    public enum DeckType
+    public enum SuitType
     {
         Hearts,
         Clubs,

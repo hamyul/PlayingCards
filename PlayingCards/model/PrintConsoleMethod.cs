@@ -4,7 +4,7 @@ namespace PlayingCards.model
 {
     public class PrintConsoleMethod : IPrintMethod
     {
-        public void Print(ICardDeck deck)
+        public void Print(ICardSuit deck)
         {
             if (deck == null)
                 throw new NullReferenceException("The deck informed to print is null.");

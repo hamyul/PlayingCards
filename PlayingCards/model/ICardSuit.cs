@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace PlayingCards.model
 {
-    public interface ICardDeck
+    public interface ICardSuit
     {
-        DeckType Type { get; }
+        SuitType Type { get; }
         List<ICard> Cards { get; }
         void Print();
     }

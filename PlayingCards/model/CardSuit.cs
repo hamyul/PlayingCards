@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace PlayingCards.model
 {
-    public class CardDeck : ICardDeck
+    public class CardSuit : ICardSuit
     {
-        public DeckType Type { get; private set; }
+        public SuitType Type { get; private set; }
         public List<ICard> Cards { get; private set; }
         private IPrintMethod _printMethod;
 
-        public CardDeck(DeckType type, IPrintMethod printMethod)
+        public CardSuit(SuitType type, IPrintMethod printMethod)
         {
             Type = type;
             Cards = new List<ICard>();
