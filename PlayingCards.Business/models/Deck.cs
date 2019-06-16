@@ -1,12 +1,14 @@
 using System;
+using PlayingCards.Business.enums;
+using PlayingCards.Business.interfaces;
 
-namespace PlayingCards.Business.model
+namespace PlayingCards.Business.models
 {
     public class Deck : IDeck
     {
         private static Random random = new Random();
         private IPrintMethod _printMethod;
-        public CardSuit[] Suits { get; private set; }
+        public ICardSuit[] Suits { get; private set; }
 
         public Deck(IPrintMethod printMethod)
         {

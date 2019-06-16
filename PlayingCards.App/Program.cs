@@ -1,5 +1,6 @@
 ﻿using System;
-using PlayingCards.Business.model;
+using PlayingCards.Business.models;
+using PlayingCards.Business.interfaces;
 
 namespace PlayingCards.App
 {

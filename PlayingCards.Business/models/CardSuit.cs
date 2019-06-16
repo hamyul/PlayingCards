@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using PlayingCards.Business.enums;
+using PlayingCards.Business.interfaces;
 
-namespace PlayingCards.Business.model
+namespace PlayingCards.Business.models
 {
     public class CardSuit : ICardSuit
     {

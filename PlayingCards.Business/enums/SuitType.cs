@@ -1,4 +1,4 @@
-namespace PlayingCards.Business.model
+namespace PlayingCards.Business.enums
 {
     public enum SuitType
     {
