@@ -1,6 +1,7 @@
 using System;
+using PlayingCards.Business.interfaces;
 
-namespace PlayingCards.Business.model
+namespace PlayingCards.Business.models
 {
     public class PrintConsoleMethod : IPrintMethod
     {

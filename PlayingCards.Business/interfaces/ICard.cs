@@ -1,4 +1,6 @@
-namespace PlayingCards.Business.model
+using PlayingCards.Business.enums;
+
+namespace PlayingCards.Business.interfaces
 {
     public interface ICard
     {

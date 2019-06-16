@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PlayingCards.Business.model;
+using PlayingCards.Business.models;
+using PlayingCards.Business.interfaces;
+using PlayingCards.Business.enums;
 
 namespace PlayingCards.Business.Tests.model
 {

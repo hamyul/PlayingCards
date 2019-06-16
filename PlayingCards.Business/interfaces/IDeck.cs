@@ -1,8 +1,8 @@
-namespace PlayingCards.Business.model
+namespace PlayingCards.Business.interfaces
 {
     public interface IDeck
     {
-        CardSuit[] Suits { get; }
+        ICardSuit[] Suits { get; }
         void Print();
         void Shuffle();
         void Reset();
