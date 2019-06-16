@@ -4,15 +4,15 @@ namespace PlayingCards.model
     {
         public string CardValue { get; private set; }
 
-        public DeckType Type { get; private set; }
+        public SuitType Type { get; private set; }
 
-        public Card(DeckType type, string cardValue)
+        public Card(SuitType type, string cardValue)
         {
             Type = type;
             CardValue = ProcessCardValue(cardValue);
         }
 
-        public Card(DeckType type, int cardValue)
+        public Card(SuitType type, int cardValue)
             : this(type, cardValue.ToString())
         {
         }

@@ -2,6 +2,6 @@ namespace PlayingCards.model
 {
     public interface IPrintMethod
     {
-        void Print(ICardDeck deck);
+        void Print(ICardSuit deck);
     }
 }
