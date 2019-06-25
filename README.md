@@ -1,6 +1,6 @@
 # PlayingCards
 
-This is an application create for fun and in the intention to learn VSCode for MacOSX.
+This is an application created for fun and in the intention to learn VSCode for MacOSX.
 Main features:
 ```
 - Create deck of cards
